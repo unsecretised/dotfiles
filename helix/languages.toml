@@ -14,22 +14,29 @@ args = ["--stdio"]
 # Point this tsdk path to your global or local TypeScript library
 config = { typescript = { tsdk = "/Users/umangsurana/.nvm/versions/node/v23.6.0/lib/node_modules" } }
 
-[language-server.sourcekit-lsp]
-command = "xcrun"
-args = ["sourcekit-lsp"] # Omit "xcrun" if not using macOS
-
-[language-server.swiftlint]
-command = "swiftlint"
-
 [[language]]
 name = "swift"
 auto-format = true
 language-servers = ["sourcekit-lsp", "swiftlint"]
-formatter = { command = "swiftformat" }
+formatter = { command = "swiftformat", args = ["--stdinpath", "%{buffer_name}", "-"] }
 
 [language.debugger]
 command = "lldb-dap"
-name = "lldb-dap"
+name = "lldp-dap"
 port-arg = "--port {}"
 transport = "tcp"
 
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+[[language.debugger.templates.completion]]
+completion = "filename"
+name = "binary"
+
+[language.debugger.templates.args]
+program = "{0}"
+runInTerminal = true
+
+[[grammar]]
+name = "swift"
+source = { git = "https://github.com/alex-pinkus/tree-sitter-swift", rev = "57c1c6d6ffa1c44b330182d41717e6fe37430704" }
