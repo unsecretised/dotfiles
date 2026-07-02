@@ -1,4 +1,3 @@
-
 [[language]]
 name = "astro"
 scope = "source.astro"
@@ -14,3 +13,5 @@ command = "astro-ls"
 args = ["--stdio"]
 # Point this tsdk path to your global or local TypeScript library
 config = { typescript = { tsdk = "/Users/umangsurana/.nvm/versions/node/v23.6.0/lib/node_modules" } }
+
+

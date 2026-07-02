@@ -38,4 +38,5 @@ enable = true
 [keys.normal.space]
 "w" = ":write"
 "q" = ":quit"
+"i" = ":toggle lsp.display-inlay-hints"
  
