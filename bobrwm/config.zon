@@ -1,0 +1,46 @@
+.{
+    .keybinds = .{
+        .{ .key = "1", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 1 },
+        .{ .key = "2", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 2 },
+        .{ .key = "3", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 3 },
+        .{ .key = "4", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 4 },
+        .{ .key = "5", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 5 },
+        .{ .key = "6", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 6 },
+        .{ .key = "7", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 7 },
+        .{ .key = "8", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 8 },
+        .{ .key = "9", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 9 },
+
+        .{ .key = "1", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 1 },
+        .{ .key = "2", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 2 },
+        .{ .key = "3", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 3 },
+        .{ .key = "4", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 4 },
+        .{ .key = "5", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 5 },
+        .{ .key = "6", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 6 },
+        .{ .key = "7", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 7 },
+        .{ .key = "8", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 8 },
+        .{ .key = "9", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 9 },
+
+        .{ .key = "left", .mods = .{ .cmd = true }, .action = .focus_left },
+        .{ .key = "right", .mods = .{ .cmd = true }, .action = .focus_right },
+        .{ .key = "up", .mods = .{ .cmd = true }, .action = .focus_up },
+        .{ .key = "down", .mods = .{ .cmd = true }, .action = .focus_down },
+    },
+
+    .bsp_split_ratio = 0.6,
+
+    .workspace_assignments = .{
+        .{ .app_id = "com.spotify.client", .workspace = 1 },
+        .{ .app_id = "com.mitchellh.ghostty", .workspace = 4 },
+        .{ .app_id = "app.zen-browser.zen", .workspace = 5 },
+        .{ .app_id = "com.hnc.discord", .workspace = 2 },
+        .{ .app_id = "md.obsidian", .workspace = 3 },
+        .{ .app_id = "com.apple.dt.Xcode", .workspace = 4 },
+    },
+
+    .gaps = .{
+        .inner = 5,
+        .outer = .{ .left = 10, .right = 10, .top = 11, .bottom = 10 },
+    },
+
+    .swipe = .{ .enabled = true, .fingers = 3, .distance_pct = 0.01 , .reverse = true }
+}

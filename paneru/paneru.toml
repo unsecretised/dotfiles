@@ -1,0 +1,20 @@
+[options]
+focus_follows_mouse = true
+mouse_follows_focus = true
+preset_column_widths = [ 0.50, 0.75, 1.0 ]
+animation_speed = 50
+
+[bindings]
+window_focus_west = "cmd - h"
+window_focus_east = "cmd - l"
+window_swap_west = "alt - h"
+window_swap_east = "alt - l"
+window_resize = "alt - r"
+window_center = "alt - c"
+quit = "ctrl + alt - q"
+
+[windows.all]
+# Matches all windows and adds a few pixels of spacing to their borders.
+title = ".*"
+horizontal_padding = 10
+vertical_padding = 10

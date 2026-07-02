@@ -1,0 +1,41 @@
+theme = "kanagawa"
+
+[editor]
+line-number = "relative"
+mouse = true
+auto-completion = true
+auto-format = true
+bufferline = "multiple"
+true-color = true
+text-width = 100
+cursorline = true
+idle-timeout = 50
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.gutters.line-numbers]
+min-width = 1
+
+[editor.indent-guides]
+render = true
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+# quick format
+"=" = ":format"
+"tab" = ":buffer-next"
+"S-tab" = ":buffer-previous"
+
+[keys.normal.space]
+"w" = ":write"
+"q" = ":quit"
+ 

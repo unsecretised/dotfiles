@@ -1,0 +1,16 @@
+
+[[language]]
+name = "astro"
+scope = "source.astro"
+injection-regex = "astro"
+file-types = ["astro"]
+roots = ["package.json", "astro.config.js", "astro.config.mjs"]
+language-servers = ["astro-ls"]
+formatter = { command = "prettier", args = ["--plugin", "prettier-plugin-astro", "--parser", "astro"] }
+auto-format = true
+
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+# Point this tsdk path to your global or local TypeScript library
+config = { typescript = { tsdk = "/Users/umangsurana/.nvm/versions/node/v23.6.0/lib/node_modules" } }
