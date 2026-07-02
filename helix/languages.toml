@@ -14,4 +14,22 @@ args = ["--stdio"]
 # Point this tsdk path to your global or local TypeScript library
 config = { typescript = { tsdk = "/Users/umangsurana/.nvm/versions/node/v23.6.0/lib/node_modules" } }
 
+[language-server.sourcekit-lsp]
+command = "xcrun"
+args = ["sourcekit-lsp"] # Omit "xcrun" if not using macOS
+
+[language-server.swiftlint]
+command = "swiftlint"
+
+[[language]]
+name = "swift"
+auto-format = true
+language-servers = ["sourcekit-lsp", "swiftlint"]
+formatter = { command = "swiftformat" }
+
+[language.debugger]
+command = "lldb-dap"
+name = "lldb-dap"
+port-arg = "--port {}"
+transport = "tcp"
 

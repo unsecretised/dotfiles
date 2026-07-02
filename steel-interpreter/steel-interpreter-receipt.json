@@ -1,0 +1,1 @@
+{"binaries":["steel"],"binary_aliases":{},"cdylibs":[],"cstaticlibs":[],"install_layout":"cargo-home","install_prefix":"/Users/umangsurana/.cargo","modify_path":true,"provider":{"source":"cargo-dist","version":"0.30.3"},"source":{"app_name":"steel-interpreter","name":"steel","owner":"mattwparas","release_type":"github"},"version":"0.8.2"}
