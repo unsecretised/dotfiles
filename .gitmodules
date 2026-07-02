@@ -4,3 +4,6 @@
 [submodule "rustcast"]
 	path = rustcast
 	url = https://github.com/unsecretised/rustcast-dotfiles.git
+[submodule "sketchybar"]
+	path = sketchybar
+	url = https://github.com/unsecretised/sketchybar-config.git
