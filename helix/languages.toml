@@ -17,7 +17,7 @@ config = { typescript = { tsdk = "/Users/umangsurana/.nvm/versions/node/v23.6.0/
 [[language]]
 name = "swift"
 auto-format = true
-language-servers = ["sourcekit-lsp", "swiftlint"]
+language-servers = ["sourcekit-lsp"]
 formatter = { command = "swiftformat", args = ["--stdinpath", "%{buffer_name}", "-"] }
 
 [language.debugger]
@@ -40,3 +40,11 @@ runInTerminal = true
 [[grammar]]
 name = "swift"
 source = { git = "https://github.com/alex-pinkus/tree-sitter-swift", rev = "57c1c6d6ffa1c44b330182d41717e6fe37430704" }
+
+[[language]]
+name = "cpp"
+language-servers = [ "clangd" ]
+
+[language-server.clangd]
+command = "clangd"
+args = ["--fallback-style=LLVM", "-I/usr/local/include"]

@@ -11,6 +11,10 @@ text-width = 100
 cursorline = true
 idle-timeout = 50
 
+[editor.inline-diagnostics]
+cursor-line = "error"
+other-lines = "error"
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
@@ -39,4 +43,6 @@ enable = true
 "w" = ":write"
 "q" = ":quit"
 "i" = ":toggle lsp.display-inlay-hints"
- 
+
+[keys.normal.space.b]
+"d" = ":buffer-close"
