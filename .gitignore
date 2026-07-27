@@ -33,3 +33,7 @@ sniffnet
 rcmd
 samply/samply-receipt.json
 scapy/prestart.py
+/.brokk
+/herdr
+/nix
+/nix-darwin

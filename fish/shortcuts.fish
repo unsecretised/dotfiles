@@ -11,18 +11,18 @@ function rustws
     cd $workspace_name; or return 1
 
     # Create root Cargo.toml
-    echo "[workspace]" > Cargo.toml
-    echo "members = [" >> Cargo.toml
+    echo "[workspace]" >Cargo.toml
+    echo "members = [" >>Cargo.toml
     for c in $crates
-        echo "    \"$c\"," >> Cargo.toml
+        echo "    \"$c\"," >>Cargo.toml
     end
-    echo "]" >> Cargo.toml
-    echo "resolver=\"3\"" >> Cargo.toml
+    echo "]" >>Cargo.toml
+    echo "resolver=\"3\"" >>Cargo.toml
 
     # Add .gitignore
-    echo "/target" > .gitignore
-    echo "**/*.rs.bk" >> .gitignore
-    echo "Cargo.lock" >> .gitignore
+    echo /target >.gitignore
+    echo "**/*.rs.bk" >>.gitignore
+    echo "Cargo.lock" >>.gitignore
 
     # Create crates
     for c in $crates
@@ -38,7 +38,7 @@ function precmd --on-event fish_prompt
 end
 
 function nothing
-    if test (blueutil --is-connected 2C:BE:EB:0B:1E:0F) = "1"
+    if test (blueutil --is-connected 2C:BE:EB:0B:1E:0F) = 1
         osascript -e 'tell application "Spotify" to playpause'
         blueutil --disconnect 2C:BE:EB:0B:1E:0F
     else
@@ -95,7 +95,7 @@ function zignew
         echo "Usage: zignew <project>"
         return 1
     end
-    
+
     if test -d "$argv[1]"
         echo "Error: directory $argv[1] already exists."
         return 1
@@ -108,5 +108,5 @@ end
 function nvm
     set -gx NVM_DIR "$HOME/.nvm"
     test -s "$NVM_DIR/nvm.sh"; and source "$NVM_DIR/nvm.sh"
-    command nvm $argv
+    bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
 end

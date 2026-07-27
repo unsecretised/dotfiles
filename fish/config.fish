@@ -19,13 +19,16 @@ fish_add_path $HOME/Library/pnpm $PATH
 fish_add_path /opt/homebrew/bin
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/bin
+fish_add_path /opt/homebrew/opt/node@24/bi
+
+fish_config prompt choose arrow
 
 # oh-my-posh init fish --config $HOME/.config/omp/omp.json | source
 
 # Set other environment variables
 set -gx STARSHIP_LOG error
 
-starship init fish | source
+# starship init fish | source
 
 set -gx EDITOR hx
 # Initialize Starship Prompt
@@ -43,6 +46,9 @@ status --is-interactive; and zoxide init fish | source
 # source "$HOME/.deno/env"
 fish_add_path $HOME/.deno/bin
 fish_add_path $HOME/.local/bin
+fish_add_path $HOME/bin
+
+export NIX_SSL_CERT_FILE=/nix/var/nix/profiles/default/etc/ssl/certs/ca-bundle.crt
 
 # Aliases (Use 'alias' command in Fish)
 alias .. 'cd ../'
@@ -59,6 +65,7 @@ set fish_greeting
 # Initial commands (commands run on startup)
 # echo
 # welcome-msg
+# use node version 24
 
 set -gx WASMTIME_HOME "$HOME/.wasmtime"
 
@@ -67,3 +74,5 @@ set -x SDKROOT (xcrun --sdk macosx --show-sdk-path)
 
 # opencode
 fish_add_path /Users/umangsurana/.opencode/bin
+
+fish_add_path /Users/umangsurana/.spicetify

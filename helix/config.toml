@@ -1,4 +1,4 @@
-theme = "kanagawa"
+theme = "zed_onedark"
 
 [editor]
 line-number = "relative"
@@ -12,8 +12,8 @@ cursorline = true
 idle-timeout = 50
 
 [editor.inline-diagnostics]
-cursor-line = "error"
-other-lines = "error"
+cursor-line = "info"
+other-lines = "info"
 
 [editor.cursor-shape]
 insert = "bar"

@@ -20,6 +20,8 @@ alias resketch 'sketchybar --reload'
 alias rerift 'brew services restart rift'
 alias riftconf 'hx ~/.config/rift/config.toml'
 
+alias fl yazi
+
 # -------------------------------------------------------------------
 # Ollama (Local LLM)
 # -------------------------------------------------------------------
@@ -114,6 +116,7 @@ alias dr 'deno run --allow-all'
 alias lion Lion-cli
 alias speed hx
 #alias nc 'z ~/.config/nvim/; and nvim'
+alias lgtm '~/bin/lgtm'
 
 # -------------------------------------------------------------------
 # Zoxide Navigation (Assumes 'zoxide init fish' is in config.fish)

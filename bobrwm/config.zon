@@ -6,8 +6,6 @@
     .{ .key = "5", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 5 },
     .{ .key = "6", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 6 },
     .{ .key = "7", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 7 },
-    .{ .key = "8", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 8 },
-    .{ .key = "9", .mods = .{ .cmd = true }, .action = .focus_workspace, .arg = 9 },
 
     .{ .key = "1", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 1 },
     .{ .key = "2", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 2 },
@@ -16,8 +14,6 @@
     .{ .key = "5", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 5 },
     .{ .key = "6", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 6 },
     .{ .key = "7", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 7 },
-    .{ .key = "8", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 8 },
-    .{ .key = "9", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 9 },
 
     .{ .key = "left", .mods = .{ .cmd = true }, .action = .focus_left },
     .{ .key = "right", .mods = .{ .cmd = true }, .action = .focus_right },
@@ -28,9 +24,15 @@
     .{ .app_id = "com.mitchellh.ghostty", .workspace = 4 },
     .{ .app_id = "app.zen-browser.zen", .workspace = 5 },
     .{ .app_id = "com.hnc.Discord", .workspace = 2 },
+    .{ .app_id = "dev.vencord.vesktop", .workspace = 2 },
     .{ .app_id = "md.obsidian", .workspace = 3 },
     .{ .app_id = "com.apple.dt.Xcode", .workspace = 4 },
+    .{ .app_id = "com.apple.iCal", .workspace = 6 },
 }, .gaps = .{
     .inner = 5,
     .outer = .{ .left = 10, .right = 10, .top = 11, .bottom = 10 },
-}, .swipe = .{ .enabled = true, .fingers = 3, .distance_pct = 0.01, .reverse = true } }
+}, .swipe = .{ .enabled = true, .fingers = 3, .distance_pct = 0.01, .reverse = true }, .animation = .{
+    .enabled = true,
+    .duration_ms = 10,
+    .easing = .ease_in_out,
+} }
