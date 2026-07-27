@@ -27,7 +27,8 @@
     .{ .app_id = "dev.vencord.vesktop", .workspace = 2 },
     .{ .app_id = "md.obsidian", .workspace = 3 },
     .{ .app_id = "com.apple.dt.Xcode", .workspace = 4 },
-    .{ .app_id = "com.apple.iCal", .workspace = 6 },
+    .{ .app_id = "com.apple.iCal", .workspace = 3 },
+    .{ .app_id = "com.umangsurana.idiot", .workspace = 1 },
 }, .gaps = .{
     .inner = 5,
     .outer = .{ .left = 10, .right = 10, .top = 11, .bottom = 10 },
@@ -35,4 +36,4 @@
     .enabled = true,
     .duration_ms = 10,
     .easing = .ease_in_out,
-} }
+}, .layout = .bsp, .workspace_names = .{ "Music", "Discord", "Misc", "Coding", "Browser" } }
