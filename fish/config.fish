@@ -20,6 +20,7 @@ fish_add_path /opt/homebrew/bin
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/bin
 fish_add_path /opt/homebrew/opt/node@24/bi
+fish_add_path -p (brew --prefix python@3.12)/libexec/bin
 
 fish_config prompt choose arrow
 
