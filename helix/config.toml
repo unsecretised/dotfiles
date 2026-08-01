@@ -43,6 +43,7 @@ enable = true
 "w" = ":write"
 "q" = ":quit"
 "i" = ":toggle lsp.display-inlay-hints"
+"r" = ":reload-all"
 
 [keys.normal.space.b]
 "d" = ":buffer-close"

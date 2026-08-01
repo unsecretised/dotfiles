@@ -14,8 +14,11 @@ stylesheet_url = "/themes/catppuccin-mocha.css"
 enabled = true
 
 [engines]
-# numbat = false
-# fend = true
+google = true
+numbat = false
+fend = false
+brave = false
+bing = false
 
 [urls.replace]
 # "www.reddit.com" = "old.reddit.com"
