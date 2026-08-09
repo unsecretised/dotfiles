@@ -56,7 +56,8 @@ formatter = { command = "ruff", args = ["format", "-"] }
 auto-format = true
 
 [language-server.pyright]
-command = "pyright"
+command = "pyright-langserver"
+args = ["--stdio"]
 
 [[language]]
 name = "zig"

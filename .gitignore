@@ -36,3 +36,5 @@ scapy/prestart.py
 /herdr
 /nix
 /nix-darwin
+/cava/shaders
+/cava/themes

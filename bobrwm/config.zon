@@ -33,9 +33,7 @@
     .{ .app_id = "com.umangsurana.idiot", .workspace = 1 },
 }, .gaps = .{
     .inner = 10,
-    .outer = .{ .left = 10, .right = 10, .top = 11, .bottom = 10 },
+    .outer = .{ .left = 10, .right = 10, .top = 10, .bottom = 10 },
 }, .swipe = .{ .enabled = true, .fingers = 3, .distance_pct = 0.01, .reverse = true }, .animation = .{
-    .enabled = true,
-    .duration_ms = 10,
-    .easing = .ease_in_out,
+    .enabled = false,
 }, .layout = .bsp, .workspace_names = .{ "Music", "Discord", "Misc", "Coding", "Browser" } }
