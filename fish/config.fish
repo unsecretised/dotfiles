@@ -17,6 +17,7 @@ end
 fish_add_path $HOME/.spicetify $PATH
 fish_add_path $HOME/Library/pnpm $PATH
 fish_add_path /opt/homebrew/bin
+fish_add_path (npm config get prefix)/bin
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/bin
 fish_add_path /opt/homebrew/opt/node@24/bi

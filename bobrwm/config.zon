@@ -25,6 +25,7 @@
     .{ .app_id = "com.apple.Music", .workspace = 1 },
     .{ .app_id = "com.mitchellh.ghostty", .workspace = 4 },
     .{ .app_id = "app.zen-browser.zen", .workspace = 5 },
+    .{ .app_id = "net.imput.helium", .workspace = 5 },
     .{ .app_id = "com.hnc.Discord", .workspace = 2 },
     .{ .app_id = "dev.vencord.vesktop", .workspace = 2 },
     .{ .app_id = "md.obsidian", .workspace = 3 },

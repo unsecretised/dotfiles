@@ -29,6 +29,7 @@ render = true
 [editor.lsp]
 display-messages = true
 display-inlay-hints = true
+display-color-swatches = false
 
 [editor.soft-wrap]
 enable = true
