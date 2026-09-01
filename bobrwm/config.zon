@@ -16,6 +16,9 @@
     .{ .key = "6", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 6 },
     .{ .key = "7", .mods = .{ .cmd = true, .alt = true }, .action = .move_to_workspace, .arg = 7 },
 
+    .{ .key = "e", .mods = .{ .cmd = true, .shift = true }, .action = .move_workspace_to_display, .arg = 2 },
+    .{ .key = "i", .mods = .{ .cmd = true, .shift = true }, .action = .move_workspace_to_display, .arg = 1 },
+
     .{ .key = "left", .mods = .{ .cmd = true }, .action = .focus_left },
     .{ .key = "right", .mods = .{ .cmd = true }, .action = .focus_right },
     .{ .key = "up", .mods = .{ .cmd = true }, .action = .focus_up },
