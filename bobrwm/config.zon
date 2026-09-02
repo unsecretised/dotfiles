@@ -23,7 +23,7 @@
     .{ .key = "right", .mods = .{ .cmd = true }, .action = .focus_right },
     .{ .key = "up", .mods = .{ .cmd = true }, .action = .focus_up },
     .{ .key = "down", .mods = .{ .cmd = true }, .action = .focus_down },
-}, .bsp_split_ratio = 0.6, .workspace_assignments = .{
+}, .bsp_split_ratio = 0.5, .workspace_assignments = .{
     .{ .app_id = "com.spotify.client", .workspace = 1 },
     .{ .app_id = "com.apple.Music", .workspace = 1 },
     .{ .app_id = "com.mitchellh.ghostty", .workspace = 4 },
@@ -32,8 +32,8 @@
     .{ .app_id = "com.hnc.Discord", .workspace = 2 },
     .{ .app_id = "dev.vencord.vesktop", .workspace = 2 },
     .{ .app_id = "md.obsidian", .workspace = 3 },
-    .{ .app_id = "com.apple.dt.Xcode", .workspace = 4 },
     .{ .app_id = "com.apple.iCal", .workspace = 3 },
+    .{ .app_id = "com.apple.reminders", .workspace = 3 },
     .{ .app_id = "com.umangsurana.idiot", .workspace = 1 },
 }, .gaps = .{
     .inner = 10,
