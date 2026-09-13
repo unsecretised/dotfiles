@@ -36,3 +36,8 @@
 }, .swipe = .{ .enabled = true, .fingers = 3, .distance_pct = 0.01, .reverse = true }, .animation = .{
     .enabled = false,
 }, .layout = .bsp, .workspace_names = .{ "Music", "Discord", "Misc", "Coding", "Browser" } }
+
+//
+// .display_gaps = .{
+//     .{ .display_id = 2, .gaps = .{ .inner = 10, .outer = .{ .top = 40 } } },
+// },
