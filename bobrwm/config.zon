@@ -43,7 +43,13 @@
         .enabled = false,
     },
     .layout = .bsp,
-    .workspace_names = .{ "Music", "Discord", "Misc", "Coding", "Browser" },
+    .workspace_names = .{
+        "Music",
+        "Discord",
+        "Misc",
+        "Coding",
+        "Browser",
+    },
     .start_at_login = true,
 }
 
