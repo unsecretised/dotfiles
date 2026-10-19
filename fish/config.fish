@@ -30,7 +30,7 @@ fish_config prompt choose arrow
 # Set other environment variables
 set -gx STARSHIP_LOG error
 
-# starship init fish | source
+starship init fish | source
 
 set -gx EDITOR hx
 # Initialize Starship Prompt

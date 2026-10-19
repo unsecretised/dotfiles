@@ -50,7 +50,7 @@
     },
     .auto_reload_config = true,
     .layout = .bsp,
-    .workspace_names = .{},
+    .workspace_names = .{ "A", "B", "C", "D", "E" },
     .start_at_login = true,
 }
 
