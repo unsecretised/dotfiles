@@ -56,6 +56,8 @@ export NIX_SSL_CERT_FILE=/nix/var/nix/profiles/default/etc/ssl/certs/ca-bundle.c
 alias .. 'cd ../'
 alias ... 'cd ../../'
 
+export NYP_FOLDER="/Users/umangsurana/Documents/nyp_26s2/"
+
 # Sourcing custom scripts
 # NOTE: Fish scripts need Fish syntax, not Zsh/Bash.
 # Ensure 'aliases.sh' and 'shortcuts.sh' are converted to Fish syntax

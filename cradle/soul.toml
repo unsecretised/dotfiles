@@ -1,0 +1,4 @@
+questions = 5
+audience = "technical"
+detail = "detailed"
+auto_verify = true
